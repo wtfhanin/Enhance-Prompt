@@ -39,18 +39,18 @@ digraph scan {
 
 **Run these commands FIRST:**
 
-```bash
+```
 # 1. Understand structure
-list_dir → project root
+List the project root directory
 
 # 2. Extract tech stack
-view_file → package.json / pyproject.toml / Cargo.toml / go.mod
+Read package.json / pyproject.toml / Cargo.toml / go.mod
 
 # 3. Check code style
-view_file → tsconfig.json / .eslintrc / prettier.config (if exists)
+Read tsconfig.json / .eslintrc / prettier.config (if exists)
 
 # 4. Check services
-view_file → .env.example / docker-compose.yml (if exists)
+Read .env.example / docker-compose.yml (if exists)
 ```
 
 **Extract:**
@@ -69,10 +69,10 @@ view_file → .env.example / docker-compose.yml (if exists)
 
 | What to Find | How | Why It Matters |
 |-------------|-----|----------------|
-| **Directory structure** | `list_dir` on `src/` | WHERE to create/modify files |
-| **Import patterns** | `grep_search` for `import` | Module resolution style |
-| **Naming conventions** | `find_by_name` for components | camelCase vs kebab-case vs PascalCase |
-| **State management** | `grep_search` for store/context/redux | Which state solution |
+| **Directory structure** | List `src/` directory | WHERE to create/modify files |
+| **Import patterns** | Search for `import` statements | Module resolution style |
+| **Naming conventions** | Find component files by name | camelCase vs kebab-case vs PascalCase |
+| **State management** | Search for store/context/redux | Which state solution |
 | **Routing** | Scan `pages/` or `app/` dirs | File-based vs config-based |
 
 ---
@@ -113,11 +113,11 @@ view_file → .env.example / docker-compose.yml (if exists)
 
 | What | How | Context Value |
 |------|-----|---------------|
-| **Function signatures** | `view_code_item` on target file | Exact params, return types |
-| **Related tests** | `find_by_name` for `*.test.*` | Existing test patterns |
-| **Type definitions** | `grep_search` for `interface` / `type` | Data shapes |
-| **Error handling** | `grep_search` for `catch` / `throw` | Error strategy |
-| **Similar implementations** | `grep_search` for similar features | Patterns to follow |
+| **Function signatures** | Read target file to inspect exports | Exact params, return types |
+| **Related tests** | Find files matching `*.test.*` | Existing test patterns |
+| **Type definitions** | Search for `interface` / `type` | Data shapes |
+| **Error handling** | Search for `catch` / `throw` | Error strategy |
+| **Similar implementations** | Search for similar features | Patterns to follow |
 
 ---
 

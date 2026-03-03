@@ -17,7 +17,7 @@ git clone https://github.com/VoDaiLocz/Enhance-Prompt.git ~/.config/opencode/enh
 
 ```bash
 mkdir -p ~/.config/opencode/skills
-ln -s ~/.config/opencode/enhance-prompt/skills ~/.config/opencode/skills/enhance-prompt
+ln -s ~/.config/opencode/enhance-prompt/skills/enhance-prompt ~/.config/opencode/skills/enhance-prompt
 ```
 
 ### 3. Restart OpenCode
@@ -49,7 +49,7 @@ cd ~/.config/opencode/enhance-prompt && git pull
 ### Skill not found
 
 1. Check symlink: `ls -l ~/.config/opencode/skills/enhance-prompt`
-2. Verify it points to: `~/.config/opencode/enhance-prompt/skills`
+2. Verify it points to: `~/.config/opencode/enhance-prompt/skills/enhance-prompt`
 3. Use `skill` tool to list discovered skills
 
 ## Getting Help

@@ -22,7 +22,7 @@
 ## 4. Enhancement (`enhance-prompt/references/prompt-patterns.md`)
 - Apply the 7-Layer Enhancement framework.
 - Inject the context gathered from step 2.
-- Choose an appropriate template from `prompt-library.md` or `prompt-library-extended.md` based on the intent.
+- Choose an appropriate template from `enhance-prompt/references/prompt-library.md` or `enhance-prompt/references/prompt-library-extended.md` based on the intent.
 
 ## 5. Formatting and Presentation (`enhance-prompt/references/output-format.md`)
 - Format the final output strictly matching the Enhanced Prompt Output Format.

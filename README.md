@@ -188,9 +188,6 @@ skills/enhance-prompt/
     ├── prompt-library.md    # 6 core prompt templates
     └── prompt-library-extended.md  # 7 extended templates
 
-docs/
-└── INSTALL.md               # Platform-specific install guide
-
 RELEASE-NOTES.md
 ```
 
