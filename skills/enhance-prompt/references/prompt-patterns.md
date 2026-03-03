@@ -8,15 +8,15 @@
 
 Rate the raw prompt (1-5) on each dimension before and after enhancement:
 
-| Dimension | 1 (Poor) | 5 (Excellent) |
-|-----------|----------|---------------|
-| **Clarity** | Ambiguous, multiple interpretations | Single clear meaning |
-| **Specificity** | No file names, no details | Exact files, lines, functions |
-| **Context** | Zero background info | Full tech stack + patterns |
-| **Structure** | Wall of text | Clean sections |
-| **Constraints** | No boundaries | Clear DO/DON'T rules |
-| **Output** | No format specified | Exact expected format |
-| **Verification** | No success criteria | Testable conditions |
+| Dimension | 1 (Poor) | 3 (Adequate) | 5 (Excellent) |
+|-----------|----------|--------------|---------------|
+| **Clarity** | Ambiguous, multiple interpretations | Understandable but some terms are vague | Single clear meaning |
+| **Specificity** | No file names, no details | Has general area but missing exact paths/functions | Exact files, lines, functions |
+| **Context** | Zero background info | Tech stack mentioned but no codebase-specific details | Full tech stack + patterns from scan |
+| **Structure** | Wall of text | Has some organization but inconsistent sections | Clean Context → Task → Constraints → Output sections |
+| **Constraints** | No boundaries | Has some rules but missing edge cases or negative constraints | Clear DO/DON'T rules with edge cases |
+| **Output** | No format specified | General format mentioned ("return code") | Exact expected format with examples |
+| **Verification** | No success criteria | Has criteria but subjective ("works well") | Testable conditions with commands/thresholds |
 
 **Score < 15:** Heavy enhancement — full rewrite + codebase scan + interactive Q&A
 **Score 15-25:** Medium enhancement — structured rewrite with context injection

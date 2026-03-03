@@ -100,6 +100,9 @@ Each layer is mandatory. Skipping layers produces weak prompts.
 - No verification criteria → Redo Layer 7
 - Prompt is longer than the solution → Over-engineered, simplify
 - Enhanced prompt contradicts codebase patterns → Rescan codebase
+- Same information repeated across sections → Consolidate, remove redundancy
+- All "After" scores are 5/5 → Likely inflated, re-evaluate each dimension honestly
+- Verification criteria are subjective ("works well", "looks good") → Replace with testable commands/thresholds
 
 ## Common Rationalizations
 
@@ -132,5 +135,7 @@ When prompt is not in English:
 - **Codebase context is non-negotiable** — Always scan before enhancing
 - **Specificity beats length** — `src/auth/login.ts:42` > paragraph of description
 - **Score before and after** — Prove the enhancement worked
+- **Score honestly** — Inflated "After" scores help no one; every 4-5 must be justified by specific content
 - **One question at a time** — Don't overwhelm with clarification requests
 - **Copy-ready output** — End with clean version ready to paste anywhere
+- **Output efficiency** — Enhanced prompt must be concise and non-redundant; if it's longer than 700 words for a simple task, trim it
