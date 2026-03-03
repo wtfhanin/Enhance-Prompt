@@ -12,13 +12,13 @@ Enable enhance-prompt skill in Codex via native skill discovery.
 2. **Create the skills symlink:**
    ```bash
    mkdir -p ~/.agents/skills
-   ln -s ~/.codex/enhance-prompt/skills ~/.agents/skills/enhance-prompt
+   ln -s ~/.codex/enhance-prompt/skills/enhance-prompt ~/.agents/skills/enhance-prompt
    ```
 
    **Windows (PowerShell):**
    ```powershell
    New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills"
-   cmd /c mklink /J "$env:USERPROFILE\.agents\skills\enhance-prompt" "$env:USERPROFILE\.codex\enhance-prompt\skills"
+   cmd /c mklink /J "$env:USERPROFILE\.agents\skills\enhance-prompt" "$env:USERPROFILE\.codex\enhance-prompt\skills\enhance-prompt"
    ```
 
 3. **Restart Codex** to discover the skill.
